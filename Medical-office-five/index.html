@@ -10,8 +10,6 @@
     <link href="assets/Bootstrap4/css/animate.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/owl.carousel.min.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/owl.theme.default.min.css" rel="stylesheet" />
-    <link href="assets/Bootstrap4/css/slick.css" rel="stylesheet" />
-    <link href="assets/Bootstrap4/css/slick-theme.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/LightBox/dist/css/lightbox.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/jquery-ui.css" rel="stylesheet" />
     <link href="assets/font/flaticon.css" rel="stylesheet" />
@@ -21,14 +19,14 @@
 <body>
     <!-------------------  Top Nav Section  ------------------->
     <section id="top-nav">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-lg-8 ml-auto">
                 <div class="row wow slideInRight" data-wow-duration=".6s" data-wow-delay=".6s">
                     <div class="col-lg-4 offset-lg-4">
                         <div class="media">
                             <i class="flaticon-open-envelope mr-3"></i>
                             <div class="media-body">
-                                <p class="email-text mt-2">
+                                <p class="email-text mt-2  vertical-line ">
                                     <a href="mailto:contact@domain.com" class="mail-style">Contact@domain.com</a>
                                 </p>
                             </div>
@@ -36,7 +34,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="media">
-                            <i class="flaticon-old-handphone mr-3"></i>
+                            <i class="flaticon-telephone mr-3"></i>
                             <div class="media-body">
                                 <p class="phone-number-text mt-1">
                                     +1 234 456 8900
@@ -64,16 +62,19 @@
                             <a class="nav-link active scroll" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#welcome">Service</a>
+                            <a class="nav-link scroll" href="#counter">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#work">Work</a>
+                            <a class="nav-link scroll" href="#services">Service</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#why-chosse">About</a>
+                            <a class="nav-link scroll" href="#best-at">Work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#blog-news">Blog</a>
+                            <a class="nav-link scroll" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="#client">Clients</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link scroll" href="#contact-us">Contact</a>
@@ -97,26 +98,26 @@
     <section class="mt--375">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 p-0">
+                <div class="col-lg-4 p-0">
                     <img src="assets/Images/doc-1.png" class="w-100" />
                     <div class="main-bg-color">
                         Contact Us
                     </div>
                 </div>
-                <div class="col-md-4 p-0">
-                    <form action="/" method="post" class="mt--44 box-shadow">
+                <div class="col-lg-4 p-0">
+                    <form action="/" method="post" class="mt--44 ">
                         <div class="contact-card">
                             <div class="form-group">
                                 <label for="fname" class="label-text">Full Name:</label>
-                                <input type="text" class="input-name" id="fname" placeholder="Name" />
+                                <input type="text" class="input-name" id="fname" placeholder="Name" required="" />
                             </div>
                             <div class="form-group mt-30">
                                 <label for="pnumber" class="label-text">Phone Number:</label>
-                                <input type="text" class="input-name" id="pnumber" placeholder="Phone Number" />
+                                <input type="text" class="input-name" id="pnumber" placeholder="Phone Number" required="" />
                             </div>
                             <div class="form-group position-relative mt-30">
                                 <label for="datepicker" class="label-text">Select Date:</label>
-                                <input type="text" class="input-name" id="datepicker" placeholder="Select a Date" />
+                                <input type="text" class="input-name" id="datepicker" placeholder="Select a Date" required="" />
                                 <i class="flaticon-calendar position-absolute calender-setting"></i>
                             </div>
                         </div>
@@ -125,7 +126,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-md-4 p-0">
+                <div class="col-lg-4 p-0">
                     <img src="assets/Images/doc-2.png" class="w-100" />
                     <div class="main-bg-color">
                         Become a Blood Doner
@@ -134,10 +135,10 @@
             </div>
         </div>
     </section>
-    <section id="best-at" class="mt-100">
+    <section id="best-at">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <p class="contact-sub-heading">
                         About us
                     </p>
@@ -191,26 +192,24 @@
                                     </p>
                                 </div>
                             </div>
+                            <div class="mt-80 media-contact-btn-align">
+                                <a href="#contact-us" class="btn btn-contact">Contact us</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div id="slider" class="media-expert-sliedr-mt">
+                <div class="col-lg-6">
+                    <div id="slider" class="media-expert-sliedr-mt mt-100">
                         <div class="dp-wrap">
                             <div id="dp-slider">
                                 <div class="dp_item " data-class="1" data-position="1">
                                     <div class="dp-img">
-                                        <img class="d3-slider-img" src="assets/Images/fancey-slide/slide-1.png" alt="investing" />
+                                        <img class="d3-slider-img" src="assets/Images/cool-slide/slide-1.png" alt="investing" />
                                     </div>
                                 </div>
                                 <div class="dp_item " data-class="2" data-position="2">
                                     <div class="dp-img">
-                                        <img class="d3-slider-img" src="assets/Images/fancey-slide/slide-2.png" alt="investing" />
-                                    </div>
-                                </div>
-                                <div class="dp_item" data-class="3" data-position="3">
-                                    <div class="dp-img">
-                                        <img class="d3-slider-img" src="assets/Images/fancey-slide/slide-3.png" alt="investing" />
+                                        <img class="d3-slider-img" src="assets/Images/cool-slide/slide-2.png" alt="investing" />
                                     </div>
                                 </div>
                             </div>
@@ -220,13 +219,733 @@
             </div>
         </div>
     </section>
-    <section class="mt-300"></section>
+    <section id="quality">
+        <div class="row">
+            <div class="col-lg-5 p-0">
+                <img src="assets/Images/service-doc.png" class="mt-365 media-quality-img-width" />
+            </div>
+            <div class="col-lg-7 p-0">
+                <div id="bg-color">
+                    <div class="position-absolute bg-setting">
+                        <h2 class="quality-text below-quality">Quality of our Work</h2>
+                        <p class="quality-pera mt-30">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                        </p>
+                        <div class="media mt-40">
+                            <div class="bg-icon-color mr-3">
+                                <img src="assets/Images/q-img/q1.png" />
+                            </div>
+                            <div class="media-body">
+                                <p class="qaulity-desc">
+                                    Duis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media mt-30">
+                            <div class="bg-icon-color mr-3">
+                                <img src="assets/Images/q-img/q2.png" />
+                            </div>
+                            <div class="media-body">
+                                <p class="qaulity-desc">
+                                    Duis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media mt-30">
+                            <div class="bg-icon-color mr-3">
+                                <img src="assets/Images/q-img/q3.png" />
+                            </div>
+                            <div class="media-body">
+                                <p class="qaulity-desc">
+                                    Duis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 text-center">
+                        <h2 class="service-text">Our Services</h2>
+                        <img src="assets/Images/underline.png" class="mt--55 img-fluid" />
+                        <p class="service-desc w-50 media-service-pera-width ">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna enim ad minim veniam, quis nostrud exercita aliquip aliqua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center mt-60">
+                <div class="col-md-4 p-1 ">
+                    <a class="list-group-item-action">
+                        <div class="bg-color-nav tab-active" id="lab-click">
+                            <h2 class="nav-text-styling">Lab Services</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 p-1">
+                    <a class="list-group-item-action">
+                        <div class="bg-color-nav tab-active dark-active" id="clinic-clicks">
+                            <h2 class="nav-text-styling">Modren Clinic</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 p-1">
+                    <a class="list-group-item-action">
+                        <div class="bg-color-nav tab-active" id="quality-click">
+                            <h2 class="nav-text-styling">Quality Equipment</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="lab">
+            <div class="container">
+                <div class="row mt-80">
+                    <div class="col-lg-5">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=Kn_g9J4ZDU4&list=RDkLjKDS0Rh2g&index=4">
+                            <img src="assets/Images/youtube.png" class="img-fluid media-height" />
+                        </a>
+                    </div>
+                    <div class="col-lg-7">
+                        <h2 class="health-text">We Have the Best Labs</h2>
+                        <p class="health-pera-text mt-15">
+                            Lorem ipsum dolor sit amet, in exerci interpretaris signiferumque nam, simul clita mediocrem ea sit. Legere euismod usu cu, everti officiis in pri,
+                            impetus placerat eu est. Choro diceret fuisset ex eam. Quo at illud conceptam. Errem dictas te pro, everti animal accumsan eum an, pri gloriatur adversarium ex. His ea singulis adipiscing, at probo liber prompta eam, eam putant tritani ea.
+                            <br /><br />
+                            Lorem ipsum dolor sit amet, in exerci interpretaris signiferumque nam, simul clita mediocrem ea sit.
+                            Legere euismod usu cu, everti officiis in pri, impetus placerat eu est. Choro diceret fuisset ex eam. Quo at illud conceptam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="clinic">
+            <div class="container">
+                <div class="row mt-80">
+                    <div class="col-lg-5">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=Kn_g9J4ZDU4&list=RDkLjKDS0Rh2g&index=4">
+                            <img src="assets/Images/youtube.png" class="img-fluid media-height" />
+                        </a>
+                    </div>
+                    <div class="col-lg-7">
+                        <h2 class="health-text">Health is The Most Precious Treasure</h2>
+                        <p class="health-pera-text mt-15">
+                            Lorem ipsum dolor sit amet, in exerci interpretaris signiferumque nam, simul clita mediocrem ea sit. Legere euismod usu cu, everti officiis in pri,
+                            impetus placerat eu est. Choro diceret fuisset ex eam. Quo at illud conceptam. Errem dictas te pro, everti animal accumsan eum an, pri gloriatur adversarium ex. His ea singulis adipiscing, at probo liber prompta eam, eam putant tritani ea.
+                            <br /><br />
+                            Lorem ipsum dolor sit amet, in exerci interpretaris signiferumque nam, simul clita mediocrem ea sit.
+                            Legere euismod usu cu, everti officiis in pri, impetus placerat eu est. Choro diceret fuisset ex eam. Quo at illud conceptam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="equipment">
+            <div class="container">
+                <div class="row mt-80">
+                    <div class="col-lg-5">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=Kn_g9J4ZDU4&list=RDkLjKDS0Rh2g&index=4">
+                            <img src="assets/Images/youtube.png" class="img-fluid media-height" />
+                        </a>
+                    </div>
+                    <div class="col-lg-7">
+                        <h2 class="health-text">We Use the Latest Equipement</h2>
+                        <p class="health-pera-text mt-15">
+                            Lorem ipsum dolor sit amet, in exerci interpretaris signiferumque nam, simul clita mediocrem ea sit. Legere euismod usu cu, everti officiis in pri,
+                            impetus placerat eu est. Choro diceret fuisset ex eam. Quo at illud conceptam. Errem dictas te pro, everti animal accumsan eum an, pri gloriatur adversarium ex. His ea singulis adipiscing, at probo liber prompta eam, eam putant tritani ea.
+                            <br /><br />
+                            Lorem ipsum dolor sit amet, in exerci interpretaris signiferumque nam, simul clita mediocrem ea sit.
+                            Legere euismod usu cu, everti officiis in pri, impetus placerat eu est. Choro diceret fuisset ex eam. Quo at illud conceptam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="counter" class="mt-100" style="background-image: url('assets/Images/quality-banner.png');">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 p-0">
+                    <div class="right-section-padding">
+                        <h2 class="latest-text">Using The Latest Medical Technology</h2>
+                        <p class="latest-pera mt-15">
+                            Lorem ipsum dolor sit amet in exerci interpretaris signiferumque nam simul clita mediocrem ea sit. euismod usu cu, everti officiis in pri, impetus placerat exerci interpretaris signiferum que nam, simul clita mediocrem ea sit.
+                        </p>
+                        <div class="row" id="counter-strike">
+                            <div class="col-lg-5">
+                                <div class="mt-40">
+                                    <div class="counter-border">
+                                        <h2 class="counter-number counter-value">129</h2>
+                                        <p class="counter-text mt-20">Happy Client</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="mt-40">
+                                    <div class="counter-border">
+                                        <h2 class="counter-number counter-value">246</h2>
+                                        <p class="counter-text mt-20">Blood Donor</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="mt-40">
+                                    <div class="counter-border">
+                                        <h2 class="counter-number counter-value">14</h2>
+                                        <p class="counter-text mt-20">Award</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="mt-40">
+                                    <div class="counter-border">
+                                        <h2 class="counter-number counter-value">20</h2>
+                                        <p class="counter-text mt-20">Different Services</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-0">
+                    <div class="my-position-relative">
+                        <div class="my-position-absolute">
+                            <img src="assets/Images/quality-doc.png" class="image-setting" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="mt-80">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <h2 class="service-text media-gallery-text">Our Gallery</h2>
+                    <img src="assets/Images/underline.png" class="mt--55 img-fluid" />
+                    <p class="service-desc w-50 media-service-pera-width media-gallery-pera-width">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna enim ad minim veniam, quis nostrud exercita aliquip aliqua.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <div class="row loadMore mt-60">
+                <div class="col-lg-4 col-md-6 col-sm-12 item p-1">
+                    <div class="containing">
+                        <img src="assets/Images/Gallery/g1.png" class="image" />
+                        <div class="overlay">
+                            <div class="w-100">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h2 class="experience-text below-experience">Experienced Physician</h2>
+                                    </div>
+                                    <div class="col-md-4 mt-25 media-icon-setting">
+                                        <div class="d-flex">
+                                            <a href="assets/Images/Gallery/g1.png" data-lightbox="image-1" class="gallery-link">
+                                                <i class="flaticon-add mr-2"></i>
+                                            </a>
+                                            <a href="#" class="gallery-link">
+                                                <i class="flaticon-link-symbol ml-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 item p-1">
+                    <div class="containing">
+                        <img src="assets/Images/Gallery/g2.png" class="img-fluid image" />
+                        <div class="overlay">
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h2 class="experience-text below-experience">Experienced Physician</h2>
+                                    </div>
+                                    <div class="col-md-4 mt-25 media-icon-setting">
+                                        <div class="d-flex">
+                                            <a href="assets/Images/Gallery/g2.png" data-lightbox="image-1" class="gallery-link">
+                                                <i class="flaticon-add mr-2"></i>
+                                            </a>
+                                            <a href="#" class="gallery-link">
+                                                <i class="flaticon-link-symbol ml-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 item p-1">
+                    <div class="containing">
+                        <img src="assets/Images/Gallery/g3.png" class="img-fluid image" />
+                        <div class="overlay">
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h2 class="experience-text below-experience">Experienced Physician</h2>
+                                    </div>
+                                    <div class="col-md-4 mt-25 media-icon-setting">
+                                        <div class="d-flex">
+                                            <a href="assets/Images/Gallery/g3.png" data-lightbox="image-1" class="gallery-link">
+                                                <i class="flaticon-add mr-2"></i>
+                                            </a>
+                                            <a href="#" class="gallery-link">
+                                                <i class="flaticon-link-symbol ml-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 item p-1">
+                    <div class="containing">
+                        <img src="assets/Images/Gallery/g4.png" class="img-fluid image" />
+                        <div class="overlay">
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h2 class="experience-text below-experience">Experienced Physician</h2>
+                                    </div>
+                                    <div class="col-md-4 mt-25 media-icon-setting">
+                                        <div class="d-flex">
+                                            <a href="assets/Images/Gallery/g4.png" data-lightbox="image-1" class="gallery-link">
+                                                <i class="flaticon-add mr-2"></i>
+                                            </a>
+                                            <a href="#" class="gallery-link">
+                                                <i class="flaticon-link-symbol ml-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 item p-1">
+                    <div class="containing">
+                        <img src="assets/Images/Gallery/g5.png" class="img-fluid image" />
+                        <div class="overlay">
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h2 class="experience-text below-experience">Experienced Physician</h2>
+                                    </div>
+                                    <div class="col-md-4 mt-25 media-icon-setting">
+                                        <div class="d-flex">
+                                            <a href="assets/Images/Gallery/g5.png" data-lightbox="image-1" class="gallery-link">
+                                                <i class="flaticon-add mr-2"></i>
+                                            </a>
+                                            <a href="#" class="gallery-link">
+                                                <i class="flaticon-link-symbol ml-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 item p-1">
+                    <div class="containing">
+                        <img src="assets/Images/Gallery/g6.png" class="img-fluid image" />
+                        <div class="overlay">
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h2 class="experience-text below-experience">Experienced Physician</h2>
+                                    </div>
+                                    <div class="col-md-4 mt-25 media-icon-setting">
+                                        <div class="d-flex">
+                                            <a href="assets/Images/Gallery/g6.png" data-lightbox="image-1" class="gallery-link">
+                                                <i class="flaticon-add mr-2"></i>
+                                            </a>
+                                            <a href="#" class="gallery-link">
+                                                <i class="flaticon-link-symbol ml-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 item p-1">
+                    <div class="containing">
+                        <img src="assets/Images/Gallery/g7.png" class="img-fluid image" />
+                        <div class="overlay">
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h2 class="experience-text below-experience">Experienced Physician</h2>
+                                    </div>
+                                    <div class="col-md-4 mt-25 media-icon-setting">
+                                        <div class="d-flex">
+                                            <a href="assets/Images/Gallery/g7.png" data-lightbox="image-1" class="gallery-link">
+                                                <i class="flaticon-add mr-2"></i>
+                                            </a>
+                                            <a href="#" class="gallery-link">
+                                                <i class="flaticon-link-symbol ml-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 item p-1">
+                    <div class="containing">
+                        <img src="assets/Images/Gallery/g8.png" class="img-fluid image" />
+                        <div class="overlay">
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h2 class="experience-text below-experience">Experienced Physician</h2>
+                                    </div>
+                                    <div class="col-md-4 mt-25 media-icon-setting">
+                                        <div class="d-flex">
+                                            <a href="assets/Images/Gallery/g8.png" data-lightbox="image-1" class="gallery-link">
+                                                <i class="flaticon-add mr-2"></i>
+                                            </a>
+                                            <a href="#" class="gallery-link">
+                                                <i class="flaticon-link-symbol ml-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 item p-1">
+                    <div class="containing">
+                        <img src="assets/Images/Gallery/g9.png" class="img-fluid image" />
+                        <div class="overlay">
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h2 class="experience-text below-experience">Experienced Physician</h2>
+                                    </div>
+                                    <div class="col-md-4 mt-25 media-icon-setting">
+                                        <div class="d-flex">
+                                            <a href="assets/Images/Gallery/g9.png" data-lightbox="image-1" class="gallery-link">
+                                                <i class="flaticon-add mr-2"></i>
+                                            </a>
+                                            <a href="#" class="gallery-link">
+                                                <i class="flaticon-link-symbol ml-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 item p-1">
+                    <div class="containing">
+                        <img src="assets/Images/Gallery/g1.png" class="img-fluid image" />
+                        <div class="overlay">
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h2 class="experience-text below-experience">Experienced Physician</h2>
+                                    </div>
+                                    <div class="col-md-4 mt-25 media-icon-setting">
+                                        <div class="d-flex">
+                                            <a href="assets/Images/Gallery/g1.png" data-lightbox="image-1" class="gallery-link">
+                                                <i class="flaticon-add mr-2"></i>
+                                            </a>
+                                            <a href="#" class="gallery-link">
+                                                <i class="flaticon-link-symbol ml-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 item p-1">
+                    <div class="containing">
+                        <img src="assets/Images/Gallery/g2.png" class="img-fluid image" />
+                        <div class="overlay">
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h2 class="experience-text below-experience">Experienced Physician</h2>
+                                    </div>
+                                    <div class="col-md-4 mt-25 media-icon-setting">
+                                        <div class="d-flex">
+                                            <a href="assets/Images/Gallery/g2.png" data-lightbox="image-1" class="gallery-link">
+                                                <i class="flaticon-add mr-2"></i>
+                                            </a>
+                                            <a href="#" class="gallery-link">
+                                                <i class="flaticon-link-symbol ml-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 item p-1">
+                    <div class="containing">
+                        <img src="assets/Images/Gallery/g3.png" class="img-fluid image" />
+                        <div class="overlay">
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h2 class="experience-text below-experience">Experienced Physician</h2>
+                                    </div>
+                                    <div class="col-md-4 mt-25 media-icon-setting">
+                                        <div class="d-flex">
+                                            <a href="assets/Images/Gallery/g3.png" data-lightbox="image-1" class="gallery-link">
+                                                <i class="flaticon-add mr-2"></i>
+                                            </a>
+                                            <a href="#" class="gallery-link">
+                                                <i class="flaticon-link-symbol ml-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="client" class="mt-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h2 class="customer-text">Customer FeedBack</h2>
+                    <p class="client-pera-text mt-25">
+                        Lorem ipsum dolor sit amet, sed dicunt oporteat cu, laboramus definiebas cum et. Duo id omnis persequeris neglegentur, facete commodo ea usu, possit lucilius sed ei. Esse efficiendi scripserit eos ex. Sea utamur iisque salutatus id.Mel autem animal.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-50">
+                <div class="owl-carousel owl-theme">
+                    <div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-3 p-0">
+                                        <img src="assets/Images/client/c1.png" class="img-fluid" />
+                                    </div>
+                                    <div class="col-md-8 p-0">
+                                        <div class="owl-bg-color">
+                                            <p class="client-say">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nostex ercitation...
+                                            </p>
+                                            <b class="client-name">Will Smith</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-3 p-0">
+                                        <img src="assets/Images/client/c2.png" class="img-fluid" />
+                                    </div>
+                                    <div class="col-md-8 p-0">
+                                        <div class="owl-bg-color">
+                                            <p class="client-say">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nostex ercitation...
+                                            </p>
+                                            <b class="client-name">Sophia Turner</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-3 p-0">
+                                        <img src="assets/Images/client/c1.png" class="img-fluid" />
+                                    </div>
+                                    <div class="col-md-8 p-0">
+                                        <div class="owl-bg-color">
+                                            <p class="client-say">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nostex ercitation...
+                                            </p>
+                                            <b class="client-name">Will Smith</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-3 p-0">
+                                        <img src="assets/Images/client/c2.png" class="img-fluid" />
+                                    </div>
+                                    <div class="col-md-8 p-0">
+                                        <div class="owl-bg-color">
+                                            <p class="client-say">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nostex ercitation...
+                                            </p>
+                                            <b class="client-name">Sophia Turner</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-3 p-0">
+                                        <img src="assets/Images/client/c1.png" class="img-fluid" />
+                                    </div>
+                                    <div class="col-md-8 p-0">
+                                        <div class="owl-bg-color">
+                                            <p class="client-say">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nostex ercitation...
+                                            </p>
+                                            <b class="client-name">Will Smith</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-3 p-0">
+                                        <img src="assets/Images/client/c2.png" class="img-fluid" />
+                                    </div>
+                                    <div class="col-md-8 p-0">
+                                        <div class="owl-bg-color">
+                                            <p class="client-say">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nostex ercitation...
+                                            </p>
+                                            <b class="client-name">Sophia Turner</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-us">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-3">
+                    <img src="assets/Images/footer-logo.png" />
+                    <p class="footer-pera-text mt-25">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercgitation.
+                    </p>
+                    <div class="mt-40" id="social">
+                        <a href="#" class="social-link ml-1"><i class="flaticon-facebook-letter-logo"></i></a>
+                        <a href="#" class="social-link ml-1"><i class="flaticon-twitter-logo-silhouette"></i></a>
+                        <a href="#" class="social-link ml-1"><i class="flaticon-google-plus-logo"></i></a>
+                        <a href="#" class="social-link ml-1"><i class="flaticon-dribbble-logo"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 media-footer-mt" id="Address">
+                    <h2 class="address-text">Address</h2>
+                    <p class="complete-add mt-40">
+                        12 Square 87 Street, Dexter
+                        Plaza 47190 LA,  USA
+                    </p>
+                    <div class="media mt-30">
+                        <i class="flaticon-email mr-3"></i>
+                        <div class="media-body">
+                            <p>
+                                <a href="mailto:emai@domain.com" class="mail">email@domain.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="media mt-30">
+                        <i class="flaticon-old-handphone mr-3"></i>
+                        <div class="media-body">
+                            <p class="phone-number">
+                                + 123 4567 443322
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 media-footer-mt">
+                    <h2 class="address-text">Contact Us</h2>
+                    <form action="/" method="post" class="mt-40">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="input-filed" placeholder="Name" required="" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="input-filed" placeholder="Email" required="" />
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea required="" type="text" class="input-area" rows="5" placeholder="Write Your Message Here"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-submit btn-block">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-bg-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="footer-text">All Right Reserved &copy; 2018 - bizinabox</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!------------------- JQuery Files Section ------------------->
     <script src="assets/Bootstrap4/js/jquery.slim.min.js"></script>
     <script src="assets/Bootstrap4/js/poper.min.js"></script>
     <script src="assets/Bootstrap4/js/bootstrap.min.js"></script>
     <script src="assets/Bootstrap4/js/owl.carousel.min.js"></script>
-    <script src="assets/Bootstrap4/js/slick.min.js"></script>
     <script src="assets/Bootstrap4/LightBox/dist/js/lightbox.min.js"></script>
     <script src="assets/Bootstrap4/js/loadMoreResults.js"></script>
     <script src="assets/Bootstrap4/js/jquery-ui.js"></script>
