@@ -51,7 +51,7 @@ $(function () {
 $(document).ready(function () {
 
     $('.loadMore').loadMoreResults({
-        displayedItems: 3,
+        displayedItems: 9,
         showItems: 3
 
     });
@@ -66,10 +66,10 @@ $(function () {
 $(function () {
     $('.owl-carousel').owlCarousel({
         loop: true,
-        margin: 0,
+        margin: 15,
         dots: true,
         nav: false,
-        item: 1,
+        item: 2,
         responsiveClass: true,
         responsive: {
             0: {
@@ -93,7 +93,7 @@ $(function () {
                 nav: false
             },
             1000: {
-                items: 1,
+                items: 2,
                 dots: true,
                 nav: false
             }
@@ -193,7 +193,7 @@ $(function () {
         var scroll = $(window).scrollTop();
         var w_width = $(window).width();
         if (w_width <= 480) {
-            if (scroll >= 270) {
+            if (scroll >= 100) {
                 $("nav").addClass("fixed-top sleep");
             } else {
                 $("nav").removeClass("fixed-top sleep");
@@ -205,4 +205,61 @@ $(function () {
             $("nav").removeClass("fixed-top sleep");
         }
     });
+});
+$(function () {
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        var w_width = $(window).width();
+        if (w_width <= 480) {
+            if (scroll >= 270) {
+                $("nav").addClass("easy-nav-on-scroll");
+            } else {
+                $("nav").removeClass("easy-nav-on-scroll");
+            }
+        }
+        else if (scroll >= 50) {
+            $("nav").addClass("easy-nav-on-scroll");
+        } else {
+            $("nav").removeClass("easy-nav-on-scroll");
+        }
+    });
+});
+/*===================== Nav tabs active Function Script ======================*/
+$(function () {
+    $('.tab-active').on('click',
+        function () {
+            $('.tab-active').removeClass('dark-active');
+            $(this).addClass('dark-active');
+        });
+});
+/*===================== NAvTab Function Script ======================*/
+$(function () {
+    $("#clinic").show();
+    $("#equipment").hide();
+    $("#lab").hide();
+
+    $("#clinic-clicks").click((e) => {
+        $("#equipment").hide();
+        $("#lab").hide();
+        $("#clinic").show();
+
+
+    });
+
+    $("#lab-click").click((e) => {
+
+        $("#lab").show();
+        $("#equipment").hide();
+        $("#clinic").hide();
+
+    });
+
+    $("#quality-click").click((e) => {
+        $("#equipment").show();
+        $("#lab").hide();
+        $("#clinic").hide();
+
+
+    });
+
 });
