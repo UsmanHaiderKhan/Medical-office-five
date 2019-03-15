@@ -110,7 +110,7 @@ html, body {
 
 .banner-text {
     padding: 125px 0 500px 0;
-    font-size: 72px;
+    font-size: 60px;
     color: rgb(255, 255, 255);
     letter-spacing: 2px;
     text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.51);
@@ -132,11 +132,17 @@ html, body {
     height: auto;
 }
 
+.contact-bg-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .main-bg-color {
     padding: 25px;
     font-size: 18px;
     color: #ffffff;
-    background: #7788d5;
+    /*background: #7788d5;*/
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
@@ -188,18 +194,9 @@ html, body {
     height: 137px;
     border-radius: 0;
     text-transform: uppercase;
-    background-color: rgb(26, 35, 126);
     font-family: 'Raleway', sans-serif;
 }
 
-.white_box {
-    position: absolute;
-    left: 745px;
-    top: 900px;
-    width: 399px;
-    height: 137px;
-    z-index: 176;
-}
 
 /*#header-nav .active {
     color: #e2a616 !important;
@@ -241,7 +238,8 @@ html, body {
      Best Section Styling
   =================================*/
 #best-at {
-    padding: 100px 0 160px 0;
+    margin-top: -135px;
+    padding: 230px 0 90px 0;
     background: #f5f5f5;
 }
 
@@ -256,7 +254,7 @@ html, body {
 
 .best-heading {
     color: #222222;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
     text-transform: capitalize;
     font-family: 'Noto Sans', sans-serif;
@@ -269,7 +267,7 @@ html, body {
 .best-pera {
     color: #656565;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 400;
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -316,6 +314,12 @@ html, body {
         color: #ffffff;
     }
 
+.img-shadow {
+    -webkit-box-shadow: 0px 4px 31px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 31px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 31px 0px rgba(0,0,0,0.75);
+}
+
 .dp-wrap {
     margin: 0 auto;
     position: relative;
@@ -346,14 +350,14 @@ html, body {
 
 #dp-slider .dp_item:first-child {
     z-index: 10 !important;
-    transform: rotateY(0deg) translateX(-33px) !important;
-    margin-top: -16%;
+    transform: rotateY(0deg) translateX(-4px) !important;
+    margin-top: -11%;
 }
 
 .dp_item[data-position="2"] {
-    margin-top: 40%;
+    margin-top: 26%;
     z-index: 9;
-    transform: rotateY(0deg) translateX(23%) translateY(-5%) scale(0.9);
+    transform: rotateY(0deg) translateX(58%) translateY(-5%) scale(0.9);
 }
 
 .dp_item[data-position="3"] {
@@ -379,7 +383,7 @@ html, body {
 
 .quality-text {
     color: #ffffff;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Noto Sans', sans-serif;
@@ -387,7 +391,7 @@ html, body {
 
 .quality-pera {
     color: #dadada;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
 }
@@ -423,7 +427,7 @@ html, body {
 
 .qaulity-desc {
     color: #929292;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
 }
@@ -502,7 +506,7 @@ html, body {
 }
 
     .dark-active .nav-text-styling {
-        color: #ffffff;
+        color: #eaeaea;
     }
 
 /*================================= 
@@ -536,13 +540,13 @@ html, body {
 .counter-border {
     border: 2px solid #ffffff;
     border-radius: 0.254rem;
-    width: 300px;
+    width: 250px;
     height: 170px;
     padding: 33px;
 }
 
 .counter-number {
-    font-size: 39.534px;
+    font-size: 35.534px;
     color: #ffffff;
     font-weight: bold;
     text-align: center;
@@ -554,7 +558,7 @@ html, body {
 
 
 .counter-text {
-    font-size: 22px;
+    font-size: 17px;
     color: #687dd8;
     font-weight: 600;
     text-align: center;
@@ -587,9 +591,19 @@ html, body {
     transition: .5s ease;
 }
 
-.containing:hover .overlay {
-    height: 38%;
+#gallery .p-1 {
+    padding: .08rem !important;
 }
+
+    #gallery .p-1:hover {
+        transition: all .6s ease;
+        padding: .567rem !important;
+    }
+
+.containing:hover .overlay {
+    height: 32%;
+}
+
 
 /*.text {
     color: white;
@@ -606,7 +620,7 @@ html, body {
 .experience-text {
     margin-top: 25px;
     color: #1a237e;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Noto Sans', sans-serif;
@@ -622,6 +636,7 @@ html, body {
         position: absolute;
         display: block;
         width: 18%;
+        left: 6%;
         border: 2px solid #1a237e;
         border-radius: 0px;
         -webkit-border-radius: 0px;
@@ -689,7 +704,7 @@ html, body {
 
 .owl-bg-color {
     padding: 40px 20px;
-    background: #ffffff;
+    background: #f9f9f9;
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -1312,9 +1327,13 @@ button:focus {
     position: absolute;
 }
 
+.img-top {
+    top: 46px;
+}
+
 .image-setting {
-    width: 450px;
-    height: 722px;
+    width: 545px;
+    height: 676px;
 }
 
 /*================ Media Query ===============*/
@@ -1392,17 +1411,17 @@ button:focus {
     }
 
     .d3-slider-img {
-        width: 80%;
+        width: 78%;
     }
 
     #dp-slider .dp_item:first-child {
-        transform: rotateY(0deg) translateX(-65px) !important;
+        transform: rotateY(0deg) translateX(-37px) !important;
         margin-top: 0;
     }
 
     .dp_item[data-position="2"] {
-        margin-top: 43%;
-        transform: rotateY(0deg) translateX(22%) translateY(-5%) scale(0.9);
+        margin-top: 46%;
+        transform: rotateY(0deg) translateX(33%) translateY(-5%) scale(0.9);
     }
 
     #bg-color {
@@ -1492,8 +1511,12 @@ button:focus {
         font-size: 16px;
     }
 
+    .img-top {
+        top: 22px;
+    }
+
     .counter-border {
-        width: 235px;
+        width: 205px;
     }
 
     .counter-text {
@@ -1523,16 +1546,16 @@ button:focus {
     }*/
 
     .experience-text {
-        margin-top: 28px;
-        font-size: 14px;
+        margin-top: 29px;
+        font-size: 12px;
     }
 
     .containing:hover .overlay {
-        height: 39%;
+        height: 36%;
     }
 
     .below-experience:after {
-        left: 0%;
+        left: 5%;
     }
 
     .media-icon-setting {
@@ -1565,6 +1588,10 @@ button:focus {
 }
 
 @media screen and (max-width: 800px) {
+    .img-top {
+        top: 0;
+    }
+
     #header-nav {
         padding: 0px 0px 0px 0px;
     }
@@ -1596,7 +1623,7 @@ button:focus {
     }
 
     #best-at {
-        padding: 50px 0 800px 0;
+        padding: 50px 0 720px 0;
     }
 
     .best-heading {
@@ -1754,7 +1781,7 @@ button:focus {
 
     .experience-text {
         margin-top: 29px;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .containing:hover .overlay {
@@ -1762,7 +1789,7 @@ button:focus {
     }
 
     .below-experience:after {
-        left: 0%;
+        left: 3%;
     }
 
     .media-icon-setting {
@@ -1826,7 +1853,7 @@ button:focus {
     }
 
     #best-at {
-        padding: 50px 0 800px 0;
+        padding: 50px 0 700px 0;
     }
 
     .best-heading {
@@ -1863,13 +1890,13 @@ button:focus {
 
     #dp-slider .dp_item:first-child {
         z-index: 10 !important;
-        transform: rotateY(0deg) translateX(-33px) !important;
+        transform: rotateY(0deg) translateX(28px) !important;
         margin-top: 0;
     }
 
     .dp_item[data-position="2"] {
-        margin-top: 33%;
-        transform: rotateY(0deg) translateX(26%) translateY(-5%) scale(0.9);
+        margin-top: 27%;
+        transform: rotateY(0deg) translateX(57%) translateY(-5%) scale(0.9);
     }
 
     #bg-color {
@@ -1979,8 +2006,8 @@ button:focus {
     }
 
     .experience-text {
-        margin-top: 29px;
-        font-size: 16px;
+        margin-top: 20px;
+        font-size: 15px;
     }
 
     .containing:hover .overlay {
@@ -1988,7 +2015,7 @@ button:focus {
     }
 
     .below-experience:after {
-        left: 0%;
+        left: 3%;
     }
 
     .media-icon-setting {
@@ -2052,7 +2079,7 @@ button:focus {
     }
 
     #best-at {
-        padding: 38px 0 404px 0;
+        padding: 38px 0 496px 0;
     }
 
     .best-heading {
@@ -2113,7 +2140,7 @@ button:focus {
     }
 
     .bg-setting {
-        padding: 53px 32px 0 20px;
+        padding: 53px 46px 0 18px;
     }
 
     .qaulity-desc {
@@ -2242,6 +2269,14 @@ button:focus {
     .media-icon-setting {
         left: 36.3%;
     }
+
+    #dp-slider .dp_item:first-child {
+        transform: rotateY(0deg) translateX(-60px) !important;
+    }
+
+    .dp_item[data-position="2"] {
+        transform: rotateY(0deg) translateX(20%) translateY(-5%) scale(0.9);
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -2252,6 +2287,14 @@ button:focus {
 
     .media-icon-setting {
         left: 35.3%;
+    }
+
+    #best-at {
+        padding: 38px 0 450px 0;
+    }
+
+    .bg-setting {
+        padding: 53px 35px 0 18px;
     }
 }
 
@@ -2287,7 +2330,7 @@ button:focus {
     }
 
     #best-at {
-        padding: 38px 0 350px 0;
+        padding: 38px 0 396px 0;
     }
 
     .best-heading {
@@ -2323,12 +2366,12 @@ button:focus {
     }
 
     #dp-slider .dp_item:first-child {
-        transform: rotateY(0deg) translateX(-39px) !important;
+        transform: rotateY(0deg) translateX(-50px) !important;
     }
 
     .dp_item[data-position="2"] {
         margin-top: 17%;
-        transform: rotateY(0deg) translateX(17%) translateY(-5%) scale(0.9);
+        transform: rotateY(0deg) translateX(20%) translateY(-5%) scale(0.9);
     }
 
     #bg-color {
@@ -2475,17 +2518,61 @@ button:focus {
 }
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
+    .img-top {
+        top: 24px;
+    }
+
+    .counter-border {
+        width: 205px;
+    }
+
+
     #bg-color {
         border-bottom: 530px solid rgb(26, 35, 126);
         border-left: 84px solid transparent;
     }
 
+    .experience-text {
+        margin-top: 29px;
+        font-size: 12px;
+    }
+
+    .containing:hover .overlay {
+        height: 36%;
+    }
+
+    .below-experience:after {
+        left: 5%;
+    }
+
+    .media-icon-setting {
+        left: 0%;
+    }
+
     .media-quality-img-width {
         height: 530px;
+    }
+
+    .d3-slider-img {
+        width: 78%;
+    }
+
+    #dp-slider .dp_item:first-child {
+        transform: rotateY(0deg) translateX(-37px) !important;
+        margin-top: 0;
+    }
+
+    .dp_item[data-position="2"] {
+        margin-top: 46%;
+        transform: rotateY(0deg) translateX(33%) translateY(-5%) scale(0.9);
     }
 }
 
 @media screen and (max-width: 823px) and (orientation: landscape) {
+    .img-top {
+        top: 0;
+    }
+
     .vertical-line {
         border-right: 0px;
     }
@@ -2525,7 +2612,7 @@ button:focus {
     }
 
     #best-at {
-        padding: 50px 0 750px 0;
+        padding: 50px 0 700px 0;
     }
 
     .best-heading {
@@ -2689,7 +2776,7 @@ button:focus {
 
     .experience-text {
         margin-top: 29px;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .containing:hover .overlay {
@@ -2697,7 +2784,7 @@ button:focus {
     }
 
     .below-experience:after {
-        left: 0%;
+        left: 3%;
     }
 
     .media-icon-setting {
@@ -2764,7 +2851,7 @@ button:focus {
     }
 
     #best-at {
-        padding: 50px 0 680px 0;
+        padding: 50px 0 540px 0;
     }
 
     .best-heading {
@@ -3190,7 +3277,7 @@ button:focus {
     }
 
     #best-at {
-        padding: 50px 0 842px 0;
+        padding: 50px 0 800px 0;
     }
 
     .best-heading {
@@ -3225,6 +3312,15 @@ button:focus {
         width: 100%;
     }
 
+    #dp-slider .dp_item:first-child {
+        transform: rotateY(0deg) translateX(-60px) !important;
+    }
+
+    .dp_item[data-position="2"] {
+        margin-top: 38%;
+        transform: rotateY(0deg) translateX(46%) translateY(-5%) scale(0.9);
+    }
+
     #bg-color {
         border-bottom: 530px solid rgb(26, 35, 126);
         border-left: 0;
@@ -3240,7 +3336,7 @@ button:focus {
     }
 
     .bg-setting {
-        padding: 53px 32px 0 20px;
+        padding: 53px 36px 0 20px;
     }
 
     .qaulity-desc {
@@ -3366,12 +3462,6 @@ button:focus {
     .footer-text {
         font-size: 18px;
     }
-
-    .dp_item[data-position="2"] {
-        margin-top: 40%;
-        z-index: 9;
-        transform: rotateY(0deg) translateX(19%) translateY(-5%) scale(0.9);
-    }
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape) {
@@ -3406,7 +3496,7 @@ button:focus {
     }
 
     #best-at {
-        padding: 38px 0 550px 0;
+        padding: 38px 0 520px 0;
     }
 
     .best-heading {
